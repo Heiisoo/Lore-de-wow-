@@ -27,3 +27,8 @@ header{
   color:#e17055;
   font-size: 30px;
 }
+.list{
+  display: flex;
+  font-size: 35px;
+  float: right;
+}
