@@ -1,0 +1,29 @@
+html{
+  background-color: #fff;
+  font-family:  ‘Lato’,‘Arial’, sans-serif;
+  font-weight : 300;
+  font-size: 20px;
+  color: #555;
+  text-rendering: optimizeLegibility;
+}
+.title{
+  position: absolute;
+  top:25%;
+  left:15%;
+  width: 940px;
+
+}
+header{
+  background-image: url(image/wow.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.title h1{
+ color: #dfe4ea;
+  font-size: 80px;
+}
+.title p{
+  color:#e17055;
+  font-size: 30px;
+}
