@@ -28,13 +28,101 @@
 </div>
 </header>
 
-<section>
-
+<section id="Varian">
+    <h2>Varian Wryyn</h2>
 
 </section>
 
 
+<footer>
+  <div class="news">
+  <div class="wrapper" style="width: 350px; margin: 0px auto 80px; text-align: left;">
+            <form class="description" style="padding: 3px; text-align: center; border: 0px none; font-family: "Bradley Hand ITC", "Apple Chancery", "URW Chancery L", cursive; font-size: 18px; color: rgb(225, 111, 84);" action="https://my.sendinblue.com/users/subscribe/" method="post" onsubmit="return false">
+            <input name="hdn_email_txt" id="hdn_email_txt" value="" style="font-family: "Trebuchet MS", Verdana, Tahoma, Geneva, sans-serif; font-size: 13px;" type="hidden">
+	    <input name="js_id" id="js_id" value="3570h" style="font-family: "Trebuchet MS", Verdana, Tahoma, Geneva, sans-serif; font-size: 13px;" type="hidden">
+	    <input name="primary_type" id="primary_type" value="email" style="font-family: "Trebuchet MS", Verdana, Tahoma, Geneva, sans-serif; font-size: 13px;" type="hidden">
+              <div class="sib-container rounded" style="border-radius: 4px; position: relative; border-width: 0px !important; border-color: transparent !important; margin: 0px; text-align: left; background: rgb(0, 0, 0) none repeat scroll 0% 0%; padding: 25px 15px 15px;">
+               <input name="req_hid" id="req_hid" value="" style="font-size: 13px; font-family: "Trebuchet MS", Verdana, Tahoma, Geneva, sans-serif;" type="hidden">
+               <div class="header" style="padding: 0px 10px;">
 
+
+                </div>
+
+                    <div class="view-messages" style=" margin:5px 0;"> </div>
+                        <!-- an email as primary -->
+            <div class="primary-group email-group forms-builder-group ui-sortable" style="">
+                <div class="row mandatory-email" style="padding: 10px; position: relative; font-family: "Bradley Hand ITC", "Apple Chancery", "URW Chancery L", cursive; color: rgb(225, 111, 84); font-size: 18px;">
+                    <div class="lbl-tinyltr" style="clear: both; float: none; font-family: "Bradley Hand ITC", "Apple Chancery", "URW Chancery L", cursive;" contenteditable="true">Entrez votre adresse émail pour vous inscrire <red style="color:#ff0000;"></red></div>
+                    <input name="email" id="email" value="" style="padding: 8px 4px; width: 85%; min-width: auto;" type="text">
+                    <div style="clear:both;"></div>
+                    <div class="hidden-btns">
+                        <a class="btn move" href="#"><i class="fa fa-arrows"></i></a><br>
+                        <!--<a class="btn btn-danger delete"  href="#"><i class="fa fa-trash-o fa-inverse"></i></a>-->
+                    </div>
+                </div>
+
+            </div>
+                                        <div class="captcha forms-builder-group" style="display: none;"><div class="row" style="font-family: "Bradley Hand ITC", "Apple Chancery", "URW Chancery L", cursive; color: rgb(225, 111, 84); font-size: 18px; padding: 10px;"><div id="gcaptcha" style="transform: scale(0.85); margin-left: -23px;"></div></div></div>
+
+            <!-- end of primary -->
+                         <div class="byline" style="font-family: "Bradley Hand ITC", "Apple Chancery", "URW Chancery L", cursive; color: rgb(225, 111, 84); font-weight: bold; font-size: 18px; text-align: center; display: block;">
+                         <button class="button editable " type="submit" data-editfield="subscribe" style="font-family: Palatino, "Palatino Linotype", "Hoefler Text", Times, "Times New Roman", serif; color: rgb(255, 255, 255); background: rgb(0, 0, 0) none repeat scroll 0% 0%; display: inline-block; white-space: nowrap; min-height: 30px; margin: 0px 5px 0px 0px; padding: 0px 10px; text-decoration: none; text-transform: uppercase; text-align: center; font-weight: bold; font-style: normal; font-size: 12px; cursor: pointer; border: 0px none; border-radius: 4px; vertical-align: top; height: auto; line-height: 150%;" contenteditable="true">S'inscrire</button></div>
+                         <div style="clear:both;"></div>
+            </div>
+          </form>
+        </div>
+        <!-- get country list -->
+        <script type="text/javascript">
+            var countryList;
+            var countryListHtml = '';
+            $.ajax({
+                url: 'https://my.sendinblue.com/users/get-country-list',
+                dataType: 'json',
+                type: 'POST',
+                async: false,
+                success: function (data) {
+                    countryList = data.countryList;
+                }});
+            for( var i = 0; i< countryList.length; i++)
+            {
+                countryListHtml += '<li><a href="#" data-code="' + countryList[i].code.substr(1) + '" data-c_code="' + countryList[i].c_code + '"> <span class="cflags ' + countryList[i].c_code+ '"></span>' + countryList[i].country + ' ' +countryList[i].code + '</a></li>';
+            }
+            $('.country-block ul').append(countryListHtml);
+
+
+            $(document).on('click', '.sib-dropdown-toggle.country-flg', function() {
+                $(".country-block ul").toggle();
+            });
+
+            $(document).on( 'click', '.country-block ul li a' ,function() {
+                var code = $(this).data('code');
+                var cCode = $(this).data('c_code');
+                $('.sib-dropdown-toggle .cflags').attr('class','cflags');
+                $('.sib-dropdown-toggle .cflags').addClass(cCode);
+
+                // update country prefix
+                $('#sms_prefix').val('+' + code);
+
+                $(".country-block ul").hide();
+            });
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("country-block"))
+                    $(".country-block ul").hide();
+            });
+
+            function isNumberKey(evt){
+                var charCode = (evt.which) ? evt.which : event.keyCode
+                if (charCode > 31 && (charCode < 48 || charCode > 57))
+                    return false;
+                return true;
+            }
+        </script>
+</div>
+
+
+ </footer>
 
 
 
