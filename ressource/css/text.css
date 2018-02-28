@@ -1,77 +1,110 @@
-html{
+html {
   background-color: black;
-  font-family:  ‘Lato’,‘Arial’, sans-serif;
-  font-weight : 300;
+  font-family: ‘Lato’, ‘Arial’, sans-serif;
+  font-weight: 300;
   font-size: 20px;
   color: #555;
   text-rendering: optimizeLegibility;
 }
-.title{
+
+.title {
   position: absolute;
-  top:35%;
-  left:10%;
+  top: 35%;
+  left: 10%;
   width: 1940px;
 }
-header{
+
+header {
   background-image: url(image/wow.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
-.title h1{
- color: #dfe4ea;
+
+.title h1 {
+  color: #dfe4ea;
   font-size: 80px;
 }
-.title p{
-  color:#e17055;
+
+.title p {
+  color: #e17055;
   font-size: 30px;
 }
-li{
+
+li {
   letter-spacing: 3px;
   padding: 15px;
   text-transform: uppercase;
   display: inline-block;
   font-size: 25px;
   font-family: ;
-
 }
-nav li a{
-  color:#e17055;
 
+nav li a {
+  color: #e17055;
 }
-nav li a:hover{
+
+nav li a:hover {
   color: white;
   text-decoration: none;
-  background: #000046;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000046;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1CB5E0, #000046);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 10px;
 }
-.row{
+
+.row {
   margin: 0 auto;
 }
+
 .main-menu {
-  position:relative;
+  position: relative;
   float: right;
-  right:25%
+  right: 25%
 }
+
 /*----------------------Newsletter----------*/
-section ,footer{
-background-color: black;
+
+section, footer {
+  background-color: black;
 }
-.news{
+
+.news {
   position: absolute;
   margin-left: 0;
 }
-.lbl-tinyltr{
-  color:#e17055;
+
+.lbl-tinyltr {
+  color: #e17055;
 }
+
 /*-------------------Article-----------*/
-.text{
-margin-left: 22%;
-}
-.picture{
+
+.text {}
+
+.picture {
   position: relative;
   left: 70%;
-  margin-top:120px;
+  margin-top: 95px;
+}
+
+h2 {
+  font-family: 'Playfair Display SC', serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 80px;
+  letter-spacing: 10px;
+  margin-left: 15%;
+}
+
+h3 {
+  color: #e17055;
+  font-family: 'Bangers', cursive;
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-left: 22%;
 }
