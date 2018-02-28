@@ -27,8 +27,11 @@ header{
   color:#e17055;
   font-size: 30px;
 }
-.list{
-  display: flex;
+li{
+  letter-spacing: 3px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  display: inline-block;
   font-size: 35px;
   
 }
