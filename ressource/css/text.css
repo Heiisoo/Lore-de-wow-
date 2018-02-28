@@ -61,8 +61,11 @@ background-color: black;
 .news{
   position: absolute;
   margin-left: 0;
-
 }
 .lbl-tinyltr{
   color:#e17055;
+}
+.text{
+margin-left: 22%;
+
 }
