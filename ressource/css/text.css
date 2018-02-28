@@ -8,10 +8,9 @@ html{
 }
 .title{
   position: absolute;
-  top:25%;
-  left:15%;
-  width: 940px;
-
+  top:35%;
+  left:10%;
+  width: 1940px;
 }
 header{
   background-image: url(image/wow.jpg);
@@ -29,9 +28,30 @@ header{
 }
 li{
   letter-spacing: 3px;
-  padding: 5px 20px;
+  padding: 15px;
   text-transform: uppercase;
   display: inline-block;
-  font-size: 35px;
-  
+  font-size: 25px;
+  font-family: ;
+
+}
+nav li a{
+  color:#e17055;
+
+}
+nav li a:hover{
+  color: white;
+  text-decoration: none;
+  background: #000046;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+}
+.row{
+  margin: 0 auto;
+}
+.main-menu {
+  position:relative;
+  float: right;
+  right:25%
 }
