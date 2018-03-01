@@ -15,7 +15,11 @@ html {
 }
 
 header {
+<<<<<<< Updated upstream
   background-image: url(image/wow.jpg);
+=======
+  background: linear-gradient(to bottom ,transparent,black ),url(image/wow.jpg);
+>>>>>>> Stashed changes
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -66,8 +70,11 @@ nav li a:hover {
   right: 25%
 }
 
+<<<<<<< Updated upstream
 /*----------------------Newsletter----------*/
 
+=======
+>>>>>>> Stashed changes
 section, footer {
   background-color: black;
 }
@@ -81,6 +88,7 @@ section, footer {
   color: #e17055;
 }
 
+<<<<<<< Updated upstream
 /*-------------------Article-----------*/
 
 .text {}
@@ -111,4 +119,8 @@ h3 {
 p{
   font-family: 'Forum', cursive;
   font-weight: 400;
+=======
+.text {
+  margin-left: 22%;
+>>>>>>> Stashed changes
 }
