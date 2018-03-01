@@ -12,9 +12,11 @@ header {
   background-position: center;
   height: 100vh;
 }
-body{
+
+body {
   background-color: black;
 }
+
 /*------Titre----*/
 
 .title h1 {
@@ -33,9 +35,10 @@ body{
   left: 10%;
   width: 1940px;
 }
+
 /*--------Navigation------*/
 
-li {
+nav li {
   letter-spacing: 3px;
   padding: 15px;
   text-transform: uppercase;
@@ -52,11 +55,8 @@ nav li a:hover {
   color: white;
   text-decoration: none;
   background: #000046;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #1CB5E0, #000046);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 10px;
 }
 
@@ -80,36 +80,33 @@ footer {
   position: absolute;
   margin-left: 0;
 }
-.deco-foot{
+
+.deco-foot {
   position: relative;
   left: 80%;
 }
 
-
 /*-------------------Article-----------*/
 
 .text {
-  padding-top: 250px;
+
+
 }
 
 .picture {
   position: relative;
-  left: 70%;
-  margin-top: 95px;
-  overflow:
+  margin-left: 155px;
+  margin-top: 85px;
+
 }
 
-.image-relou{
-  position: relative;
-  right:10%;
-}
 h2 {
   font-family: 'Playfair Display SC', serif;
   color: #fff;
   font-weight: 700;
   font-size: 80px;
   letter-spacing: 10px;
-  margin-left: 14%;
+  padding-left: 14%;
 }
 
 h3 {
@@ -118,10 +115,52 @@ h3 {
   font-weight: 400;
   font-size: 40px;
   letter-spacing: 2px;
-  margin-left: 22%;
+  padding-left: 22%
 }
-
-p {
+section p{
   font-family: 'Forum', cursive;
   font-weight: 400;
+  width: 900px;
+  font-size: 30px;
+  color: white;
+  border-left: 5px solid #e17055;
+  padding-left:55px;
+  margin-top: 55px;
+
+}
+
+section .article{
+  display: flex;
+}
+.video{
+  position : relative;
+        width : 600px;
+        height : 680px;
+        padding-top:;
+        padding-left:550px;
+}
+section{
+  margin-top: 250px;
+}
+section li{
+  letter-spacing: 3px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: 'Bangers', cursive;
+
+}
+section li a {
+  color: white;
+  border: 6px solid #e17055;
+  background-color: #e17055;
+  border-radius: 10px;
+  text-decoration: none;
+}
+section li a:hover {
+  color: #e17055 ;
+  text-decoration: none;
+  background-color: white;
+  border: 6px solid white;
+  border-radius: 10px;
 }
