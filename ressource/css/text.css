@@ -88,16 +88,10 @@ footer {
 
 /*-------------------Article-----------*/
 
-.text {
-
-
-}
-
 .picture {
   position: relative;
   margin-left: 155px;
   margin-top: 85px;
-
 }
 
 h2 {
@@ -117,49 +111,56 @@ h3 {
   letter-spacing: 2px;
   padding-left: 22%
 }
-section p{
+
+section p {
   font-family: 'Forum', cursive;
   font-weight: 400;
   width: 900px;
   font-size: 30px;
   color: white;
   border-left: 5px solid #e17055;
-  padding-left:55px;
+  padding-left: 55px;
   margin-top: 55px;
-
 }
 
-section .article{
+section .article {
   display: flex;
 }
-.video{
-  position : relative;
-        width : 600px;
-        height : 680px;
-        padding-top:;
-        padding-left:550px;
+
+.video {
+  position: relative;
+  width: 600px;
+  height: 680px;
+  padding-top: ;
+  padding-left: 550px;
 }
-section{
+
+section {
   margin-top: 250px;
 }
-section li{
+
+section li {
+  text-decoration: none;
   letter-spacing: 3px;
   padding: 15px;
+  margin-left: 166px;
   text-transform: uppercase;
   font-size: 35px;
   font-family: 'Bangers', cursive;
-
+  display: inline-block;
 }
+
 section li a {
+  text-decoration: none;
   color: white;
   border: 6px solid #e17055;
   background-color: #e17055;
   border-radius: 10px;
-  text-decoration: none;
 }
+
 section li a:hover {
-  color: #e17055 ;
   text-decoration: none;
+  color: #e17055;
   background-color: white;
   border: 6px solid white;
   border-radius: 10px;
