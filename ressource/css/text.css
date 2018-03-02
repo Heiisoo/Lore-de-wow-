@@ -15,6 +15,7 @@ header {
 
 body {
   background-color: black;
+  cursor: url("ressource/img/cursor.png"), pointer;
 }
 
 /*------Titre----*/
